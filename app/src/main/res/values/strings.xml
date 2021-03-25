@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Meeting Demo</string>
+    <string name="ok">OK</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_calendar">Calendar</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="dashboard_fragment_label">Dashboard</string>
+    <string name="login_fragment_label">Login</string>
+    <string name="response_fragment_label">Response</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!--    Dashboard-->
+    <string name="direct_login">Direct Login</string>
+    <string name="join">Join</string>
+    <string name="efx_login">EFX Login</string>
+    <string name="user_login">User Login</string>
+    <string name="create_meeting">Create meeting</string>
+    <string name="permission_message">This sample app uses camera.</string>
+    <string name="confirmation">This web page wants to use following resources:\n\n%s</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="today_meeting">Today Meeting</string>
+    <string name="meeting_list">Meeting List</string>
+    <string name="meeting">Meeting</string>
+    <string name="meeting_calendar">Meeting Calendar</string>
+    <string name="no_meeting_for_today">No Meeting for today.</string>
+</resources>

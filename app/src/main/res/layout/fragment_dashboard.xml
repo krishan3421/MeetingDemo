@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".ui.fragments.DashboardFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+<Button
+    android:id="@+id/direct_login_button"
+    style="@style/blue_round_button"
+    android:text="@string/direct_login"/>
+    <Button
+        android:id="@+id/efx_login_button"
+        style="@style/blue_round_button"
+        android:text="@string/efx_login"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+    <Button
+        android:id="@+id/user_login_button"
+        style="@style/blue_round_button"
+        android:text="@string/user_login"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+</LinearLayout>
+
+</RelativeLayout>

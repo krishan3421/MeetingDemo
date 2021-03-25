@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.embedded">
+
+
+    <uses-permission android:name="android.webkit.PermissionRequest"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="true" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.level.full" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.capability.raw" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.any" android:required="true" />
+    <uses-feature android:name="android.hardware.microphone" android:required="true" />
+    <uses-feature android:name="android.hardware.camera2" android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StitchCredit">
+<!--        <activity android:name=".ui.WebViewActivity"></activity>-->
+        <!-- <activity -->
+        <!-- android:name="com.embedded.ui.MainActivity" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/Theme.StitchCredit.NoActionBar"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.StitchCredit.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MeetingDashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.StitchCredit.NoActionBar"></activity>
+        <activity android:name=".ui.MeetingListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.StitchCredit.NoActionBar"></activity>
+        <activity android:name=".ui.TodayMeetingListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.StitchCredit.NoActionBar"></activity>
+        <activity android:name=".ui.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.StitchCredit.NoActionBar"></activity>
+    </application>
+
+</manifest>
